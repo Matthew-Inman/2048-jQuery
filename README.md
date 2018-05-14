@@ -1,2 +1,3 @@
 # 2048-jQuery
-A lot of code is to be refactored, but game is functional !
+This was a 2 day school project as we were introduced to jQuery. 
+Some code is to be refactored, but the game is functional!
