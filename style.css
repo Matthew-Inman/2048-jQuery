@@ -2,28 +2,34 @@ body {
     background-color: #576fa7;
     margin-top: 5em;
 }
-
 h3 {
-    position: relative;
-    left: 30%;
-    display: inline-block;
+    position: absolute;
+    /* font-weight: 400; */
+    /* border: solid; */
+    border: 2px solid #1d7d74;
+    background: cornflowerblue;
+    width: 5em;
+    text-align: center;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
+    
 #score {
     position: absolute;
-    display: inline-block;
-    border: 1px solid;
+    border: 2px solid #1d7d74;
     background-color: #c2f0c2;
-    width: 6em;
     height: 2em;
     font-size: 30px;
     text-align: center;
-    font-family: monospace;
-    left: 40%;
+    top: 3.5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7em;
 }
 
 #new_game {
-    position: absolute;
+    position: relative;
     left: 1em;
     background-color: #90acee;
     height: 2em;
@@ -31,20 +37,21 @@ h3 {
 }
 
 #sound {
-    position: absolute;
+    position: relative;
     background-color: #a4b2d2;
-    height: 2em;
-    top: 6em;
-    right: 80%;
+    height: 3em;
+    top: 4em;
+    left: -10em;
 }
 
 .grid_container {
-    position: relative;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-    height: 500px;
+    position: absolute;
+    margin-top: 4em;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    height: 600px;
 }
 
 .tile {
@@ -52,7 +59,6 @@ h3 {
     height: 25%;
     position: absolute;
     border: 2px solid #1d7d74;
-    /*border-radius: 4px;*/
     box-sizing: border-box;
     font-size: 30px;
     text-align: center;
