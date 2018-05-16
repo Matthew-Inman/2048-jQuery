@@ -178,8 +178,6 @@ class Tiles {
         else if ($(div).hasClass("filled_2048")) {
             $(div).removeClass("filled_2048");
         }
-        // else
-        //     console.log("function remove filled class did not execute anything.");
     }
 
     update_animations()
@@ -189,10 +187,10 @@ class Tiles {
 
         for (let i = 0; i < 4; i++)
         {
-            if (row > 4){row = 1}
+            if (row > 4){row = 1;}
             for (let j = 0; j < 4; j++)
             {
-                if (col > 4){col = 1}
+                if (col > 4){col = 1;}
                 if ($('div[col=' + col + '][row="'+ row +'"]').hasClass("w3-animate-opacity")) {
                     $('div[col=' + col + '][row="' + row + '"]').removeClass("w3-animate-opacity")
                 }
@@ -209,10 +207,10 @@ class Tiles {
 
         for (let i = 0; i < 4; i++)
         {
-            if (row > 4){row = 1}
+            if (row > 4){row = 1;}
             for (let j = 0; j < 4; j++)
             {
-                if (col > 4){col = 1}
+                if (col > 4){col = 1;}
                 let temp_value = this.return_filled_class($('div[col=' + col + '][row="'+ row +'"]'));
                 if (temp_value !== "empty") {
                     this.remove_filled_class($('div[col=' + col + '][row="'+ row +'"]'));
